@@ -13,14 +13,14 @@ pipeline{
              
 	     steps{
                   
-		  sh ' git clone https://github.com/VibhaU/Ping_Pong.git -b main'
+		  sh ' git clone https://github.com/VibhaU/multibranch_jenkins.git -b main'
 
 	     }
  
 	}
 	stage('deploy'){
               steps{
-                sh 'mv Ping_Pong/* ../../../../www/html'
+                sh 'mv multibranch_jenkins/* ../../../../www/html'
 	      }
 	}
      
